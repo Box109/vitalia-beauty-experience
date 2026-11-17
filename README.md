@@ -1,5 +1,5 @@
 # Vitalia Beauty Experience
-
+Página publicada: https://box109.github.io/vitalia-beauty-experience/
 Aplicación React + TypeScript + Vite + Tailwind CSS, preparada para desplegarse en Vercel. Incluye la experiencia visual y los módulos interactivos del archivo original, junto con conexión preparada a Supabase para catálogo, reservas y autenticación administrativa.
 
 ## Requisitos
