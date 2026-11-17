@@ -89,7 +89,7 @@ export const INITIAL_SERVICES = [
     price: 70000,
     active: true,
     moods: ['Elegante', 'Sofisticada'],
-    image: 'https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&w=800&q=80'
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Manicure_closeup.jpg?width=800'
   },
   {
     id: 'srv-9',
@@ -100,7 +100,7 @@ export const INITIAL_SERVICES = [
     price: 55000,
     active: true,
     moods: ['Natural', 'Elegante'],
-    image: 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?auto=format&fit=crop&w=800&q=80'
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Manicure_closeup.jpg?width=800'
   },
   {
     id: 'srv-10',
