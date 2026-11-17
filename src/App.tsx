@@ -2023,7 +2023,8 @@ export default function App() {
     e.preventDefault();
     if (!supabase) { notify('Configura Supabase para habilitar el acceso administrativo.', 'error'); return; }
     const { data, error } = await supabase.auth.signInWithPassword({ email: loginForm.email.trim(), password: loginForm.password });
-    if (error || !data.user || data.user.app_metadata?.role !== 'admin') { await supabase.auth.signOut(); notify('La cuenta no tiene permisos administrativos.', 'error'); return; }
+   if (error) { notify(error.message, 'error'); return; }
+   if (!data.user || data.user.app_metadata?.role !== 'admin') { await supabase.auth.signOut(); notify('La cuenta no tiene permisos administrativos.', 'error'); return; }
     setAdminSession({ email: data.user.email, role: 'admin', token: 'Sesión protegida por Supabase' });
     const [{ data: adminServices }, { data: adminBookings }] = await Promise.all([
       supabase.from('services').select('*').order('created_at', { ascending: false }),
