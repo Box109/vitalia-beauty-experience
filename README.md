@@ -88,3 +88,10 @@ Reemplaza `57XXXXXXXXXX` en `VITE_WHATSAPP_NUMBER` por el número real, con indi
 - El catálogo de 28 servicios está en `src/data/catalog.ts` (precios de demostración editables).
 - Sin Supabase, la web y el panel funcionan en **modo demostración local** (datos solo en el navegador).
 - Con Supabase, el panel exige login real; si la tabla `services` está vacía aparece el botón **Cargar catálogo inicial (28)**.
+## Cómo entrar al panel administrativo
+
+1. En la página publicada, pulsa **Admin** en el menú o en el pie de página.
+2. Inicia sesión con el correo y la contraseña de la administradora, que son un usuario creado en Supabase Auth.
+3. La cuenta debe tener el rol `admin` en `app_metadata`. Así las políticas de seguridad de la base de datos permiten gestionar reservas y servicios.
+4. Desde el panel se pueden confirmar o cancelar reservas, y crear, editar, activar o eliminar servicios, incluidas sus fotos y precios.
+
